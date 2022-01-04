@@ -1,0 +1,163 @@
+/* --------------NavBar-------------- */
+
+/* --------------Body-------------- */
+.bg-custom{
+    background-color: #1C1C1C;
+    opacity: 95%;
+}
+.bg-gradiant.experiences{
+    background-image: linear-gradient(to left, #1C1C1C, #474747);
+    opacity: 95%;
+}
+.bg-gradiant.formations{
+    background-image: linear-gradient(to right, #1C1C1C, #8f6757);
+    opacity: 95%;
+}
+.bg-gradiant.competences{
+    background-image: linear-gradient(to left, #1C1C1C, #edae19);
+    opacity: 95%;
+}
+.bg-gradiant.loisirs{
+    background-image: linear-gradient(to right, #1C1C1C, #0d5b6b);
+    opacity: 95%;
+}
+.col-6.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed, scroll;
+}
+.parallax-effect{
+    background-image: url(../img/feuille.jpg);
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 0;
+}
+/* --------------Profil-------------- */
+.img-fluid.alexandrelvq{
+    border-radius: 50%;
+    padding: 8%;
+}
+.contact{
+    margin: 0;
+}
+.parallax-effect.profil{
+    background-image: url(../img/BG.jpg);
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+}
+.row.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-4.nom{
+    text-align: end;
+}
+/* --------------Experiences-------------- */
+.img-fluid.experiences{
+    border-radius: 20%;
+    width: 350px;
+    height: 350px;
+}
+.col-6{
+    padding: 5%;
+}
+.parallax-effect.experiences{
+    background-image: url(../img/feuille.jpg);
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+}
+/* --------------Formations-------------- */
+.img-fluid.formations{
+    border-radius: 20%;
+    width: 350px;
+    height: 350px;
+}
+.col-6{
+    padding: 5%;
+}
+.parallax-effect.formations{
+    background-image: url(../img/livre.jpg);
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+}
+/* --------------Compétences-------------- */
+.img-fluid.competences{
+    border-radius: 20%;
+    width: 350px;
+    height: 350px;
+}
+.col-6{
+    padding: 5%;
+}
+.parallax-effect.competences{
+    background-image: url(../img/pierre.jpg);
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+}
+/* --------------Loisirs-------------- */
+.img-fluid.loisirs{
+    border-radius: 20%;
+    width: 350px;
+    height: 350px;
+}
+.col-6{
+    padding: 5%;
+}
+.parallax-effect.loisirs{
+    background-image: url(../img/sport.jpg);
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+}
+h2:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background: #0d5b6b;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+/* --------------Footer-------------- */
+.parallax-effect.footer{
+    background-image: url(../img/BG.jpg);
+    max-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    display: flex;
+    height: 50px;
+    width: 150px;
+}
