@@ -152,6 +152,10 @@ h2.competences:after {
     margin-bottom: 4px;
     margin-left: 10px;
 }
+/* Barre */
+.progress-bar.progress-bar-success{
+    background-color: #edae19;
+}
 /* --------------Loisirs-------------- */
 .img-fluid.loisirs{
     border-radius: 20%;
