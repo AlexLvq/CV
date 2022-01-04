@@ -46,9 +46,6 @@ body{
     border-radius: 50%;
     padding: 8%;
 }
-.contact{
-    margin: 0;
-}
 .parallax-effect.profil{
     background-image: url(../img/BG.jpg);
     min-height: 300px; 
@@ -65,6 +62,14 @@ body{
 }
 .col-4.nom{
     text-align: end;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.description{
+    background-color: #1C1C1C;
+    opacity: 70%;
 }
 /* --------------Experiences-------------- */
 .img-fluid.experiences{
@@ -183,8 +188,34 @@ h2.loisirs:after {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contact{
+.btn.btn-outline-light{
     display: flex;
     height: 50px;
     width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row.contact{
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.row.reseaux{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.reseaux{
+    margin: 0;
+}
+/* ---------Modal---------- */
+.modal-body.background{
+    background-image: url(../img/BG.jpg);
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
