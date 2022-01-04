@@ -84,6 +84,15 @@ body{
     background-size: cover;
     padding-top: 300px;
 }
+h2.experiences:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background: #474747;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
 /* --------------Formations-------------- */
 .img-fluid.formations{
     border-radius: 20%;
@@ -101,6 +110,15 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 300px;
+}
+h2.formations:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background: #8f6757;
+    margin-bottom: 4px;
+    margin-left: 10px;
 }
 /* --------------Compétences-------------- */
 .img-fluid.competences{
@@ -120,6 +138,15 @@ body{
     background-size: cover;
     padding-top: 300px;
 }
+h2.competences:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background: #edae19;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
 /* --------------Loisirs-------------- */
 .img-fluid.loisirs{
     border-radius: 20%;
@@ -138,7 +165,7 @@ body{
     background-size: cover;
     padding-top: 300px;
 }
-h2:after {
+h2.loisirs:after {
     content: "";
     width: 100px;
     height: 1px;
