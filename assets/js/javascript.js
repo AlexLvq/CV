@@ -21,6 +21,9 @@ $(window).scroll(function () {
         $('#navaccueil').slideUp(450);
 });
 
+// hover + active sur les mots de la NavBar --------------------------------------------------
+
+
 // Barre annimée --------------------------------------------------
 $(".plein").animate({
     width: "100%"
