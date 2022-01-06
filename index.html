@@ -19,7 +19,7 @@
 
 <body>
     <!-- Modal contact -->
-    <div id="contactmodal" class="modal" tabindex="-1">
+    <!-- <div id="contactmodal" class="modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header bg-custom">
@@ -54,19 +54,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Navbar -->
     <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top bg-custom">
         <div class="container-fluid">
             <h4 class="text-light">Alexandre LEVEQUE</h4>
-            <div class="collapse navbar-collapse justify-content-end profil" id="navbarNavAltMarkup">
-                <a class="navbar-brand" href="#profil">Profil</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-md-end justify-content-start navbar-collapse collapse navbar-nav"
+                id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+                    <a class="nav-link class experience" id="experience" href="#profil">Profil</a>
                     <a class="nav-link class experience" id="experience" href="#experiences">Expériences</a>
                     <a class="nav-link" id="formation" href="#formations">Formations</a>
                     <a class="nav-link" id="competence" href="#competences">Compétences</a>
@@ -81,15 +81,15 @@
         <header id="navaccueil">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-8 p-0">
+                    <div class="col-12 col-md-8 p-0">
                         <div class="container accueil">
                             <!-- titre -->
                             <h1>
                                 <a class="text-white accueil fs-1" href="#index.html">Alexandre LEVEQUE</a>
                             </h1>
-                            <h2 class="fs-3">En formation <span>CDUI</span> à la Manu</h2>
+                            <h2 class="py-2 fs-3">En formation <span>CDUI</span> à la Manu</h2>
                             <!-- Menu de nav -->
-                            <nav class="">
+                            <nav class="d-none d-md-block">
                                 <ul class="nav">
                                     <li class="nav-item">
                                         <a class="nav-link active" href="#profil">Profil</a>
@@ -107,17 +107,19 @@
                                         <a id="loisir" class="nav-link active" href="#loisirs">Loisirs</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a id="contact" class="nav-link active" href="#contacts">Contatcs</a>
+                                        <a id="contact" class="nav-link active"
+                                            href="#parallax-effect footer">Contatcs</a>
                                     </li>
                                 </ul>
                             </nav>
                             <!-- Reseaux sociaux -->
                             <div id="socialink" class="">
                                 <a href="https://www.linkedin.com/in/alexandre-leveque-3a1ba710b/" target="_blank"
-                                    class="py-2 m-1 d-inline-block">
+                                    class="py-md-2 m-md-1 d-inline-block">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="https://github.com/AlexLvq" target="_blank" class="py-2 m-1 d-inline-block">
+                                <a href="https://github.com/AlexLvq" target="_blank"
+                                    class="py-md-2 m-md-1 d-inline-block">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -130,14 +132,14 @@
         <!-- Profil -->
         <div class="container-fluid text-light">
             <div class="row profil">
-                <div class="col-4 nom">
+                <div class="col col-md-4 nom">
                     <!-- <h1>Leveque <br>
                         LEVEQUE</h1> -->
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <img class="img-fluid alexandrelvq" src="assets\img\Moi (3).jpg" alt="PhotoAlexandreLeveque">
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 m-md-0 col-10 offset-2">
                     <p class="contact">Email : alexandrelvqq@gmail.com</p>
                     <p class="contact"> Téléphone : 07 78 39 70 62</p>
                     <p class="contact"> Adresse : Amiens</p>
@@ -145,7 +147,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 offset-2 text-center">
+                <div class="col col-md-8 offset-md-2 text-center">
                     <p class="description">Originaire d’un cursus Bachelor Responsable Projet et Communication, je suis
                         actuellement en
                         formation de Concepteur Designer UI à l'école de la Manu. Sérieux, créatif, capable de s’adapter
@@ -158,12 +160,13 @@
     <div class="parallax-effect experiences">
         <div id="experiences" class="text-light container-fluid bg-gradiant experiences">
             <div class="row">
-                <div class="col-6 image pe-0 ps-0">
+                <h2 class="d-block d-md-none py-3 h2 experiences">Expériences</h2>
+                <div class="col-12 py-4 col-md-6 image pe-md-0 ps-md-0">
                     <img class="img-fluid experiences" src="assets\img\Experiences.jpg" alt="experiences">
                 </div>
-                <div class="col-3 ps-0 pe-0 pt-4 pb-4">
-                    <h2 class="h2 experiences">Expériences</h2>
-                    <div class="">
+                <div class="col-12 col-md-3 ps-md-0 pe-md-0 pt-md-4 pb-md-4">
+                    <h2 class="d-none d-md-block h2 experiences">Expériences</h2>
+                    <div class="py-4">
                         <h3 class="fs-5">Développement Touristique et Commercial</h3>
                         <p>Mars 2020 - Avril 2020</p>
                         <div>
@@ -175,7 +178,7 @@
                             <li>Accueil touristique.</li>
                         </ul>
                     </div>
-                    <div class="pt-3">
+                    <div class="py-4 pt-md-3">
                         <h3 class="fs-5">Responsable Commercial / Marketing</h3>
                         <p>Janvier 2018 - Juillet 2018</p>
                         <div>
@@ -188,8 +191,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-3 expe">
-                    <div class="">
+                <div class="col col-md-3 expe">
+                    <div class="py-4">
                         <h3 class="fs-5">Assitant Manager</h3>
                         <p>Juin 2017 - Aout 2017</p>
                         <div>
@@ -207,47 +210,99 @@
     </div>
     <!-- Formations -->
     <div class="parallax-effect formations">
-        <div id="formations" class="text-light container-fluid bg-gradiant formations">
-            <div class="row">
-                <h2 class="h2 formations pt-5 ps-5">Formations</h2>
-                <div class="col-3 pe-0 pb-4">
-                    <div class="pt-4">
-                        <h3 class="fs-5">Concepteur Designer UI</h3>
-                        <p>Novembre 2021 - Aout 2022</p>
-                        <div>
-                            <h4 class="text-secondary fs-5">La Manu</h4>
+        <div id="formations">
+            <!-- ------------------------------Formation DeskTop----------------------- -->
+            <div class="d-none d-md-block text-light container-fluid bg-gradiant formations">
+                <div class="row">
+                    <h2 class="h2 formations pt-md-5 ps-md-5">Formations</h2>
+                    <div class="col-md-3 pe-md-0 pb-md-4">
+                        <div class="pt-md-4">
+                            <h3 class="fs-5">Concepteur Designer UI</h3>
+                            <p>Novembre 2021 - Aout 2022</p>
+                            <div>
+                                <h4 class="text-secondary fs-5">La Manu</h4>
+                            </div>
+                            <ul>
+                                <li>Concepteur Designer UI (CDUI)</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Concepteur Designer UI (CDUI)</li>
-                        </ul>
+                        <div class="pt-md-4">
+                            <h3 class="fs-5">Bachelor Marketing Communication</h3>
+                            <p>Octobre 2019 - Septembre 2020</p>
+                            <div>
+                                <h4 class="text-secondary fs-5">Esupcom</h4>
+                            </div>
+                            <ul>
+                                <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de
+                                    validation)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pt-4">
-                        <h3 class="fs-5">Bachelor Marketing Communication</h3>
-                        <p>Octobre 2019 - Septembre 2020</p>
+                    <div id="expe" class="col-md-3 forma">
                         <div>
-                            <h4 class="text-secondary fs-5">Esupcom</h4>
+                            <h3 class="fs-5">Bachelor Marketing Communication</h3>
+                            <p>Octobre 2019 - Septembre 2020</p>
+                            <div>
+                                <h4 class="text-secondary fs-5">Esupcom</h4>
+                            </div>
+                            <ul>
+                                <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de
+                                    validation)
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de validation)
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="col-md-6 image pe-md-0 ps-md-5">
+                        <img class="img-fluid formations" src="assets\img\Formations.jpg" alt="formations">
                     </div>
                 </div>
-                <div id="expe" class="col-3 forma">
-                    <div>
-                        <h3 class="fs-5">Bachelor Marketing Communication</h3>
-                        <p>Octobre 2019 - Septembre 2020</p>
-                        <div>
-                            <h4 class="text-secondary fs-5">Esupcom</h4>
-                        </div>
-                        <ul>
-                            <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de validation)
-                            </li>
-                        </ul>
+            </div>
+            <!-- ---------------------Formation portable---------------------------- -->
+            <div class=" d-block d-md-none text-light container-fluid bg-gradiant formations">
+                <div class="row">
+                    <h2 class="h2 formations py-3 pt-md-5 ps-md-5">Formations</h2>
+                    <div class="pb-3 col-md-6 image pe-md-0 ps-md-5">
+                        <img class="img-fluid formations" src="assets\img\Formations.jpg" alt="formations">
                     </div>
-                </div>
-                <div class="col-6 image pe-0 ps-0">
-                    <img class="img-fluid formations" src="assets\img\Formations.jpg" alt="formations">
+                    <div class="col-md-3 pe-md-0 pb-md-4">
+                        <div class="pb-4 pt-md-4">
+                            <h3 class="fs-5">Concepteur Designer UI</h3>
+                            <p>Novembre 2021 - Aout 2022</p>
+                            <div>
+                                <h4 class="text-secondary fs-5">La Manu</h4>
+                            </div>
+                            <ul>
+                                <li>Concepteur Designer UI (CDUI)</li>
+                            </ul>
+                        </div>
+                        <div class="pb-4 pt-md-4">
+                            <h3 class="fs-5">Bachelor Marketing Communication</h3>
+                            <p>Octobre 2019 - Septembre 2020</p>
+                            <div>
+                                <h4 class="text-secondary fs-5">Esupcom</h4>
+                            </div>
+                            <ul>
+                                <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de
+                                    validation)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="expe" class="pb-4 ps-3 col-md-3 forma">
+                        <div>
+                            <h3 class="fs-5">Bachelor Marketing Communication</h3>
+                            <p>Octobre 2019 - Septembre 2020</p>
+                            <div>
+                                <h4 class="text-secondary fs-5">Esupcom</h4>
+                            </div>
+                            <ul>
+                                <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de
+                                    validation)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,11 +311,12 @@
     <div class="parallax-effect competences">
         <div id="competences" class="text-light container-fluid bg-gradiant competences">
             <div class="row">
-                <div class="col-6 image">
-                    <img class="img-fluid competences" src="assets\img\Compétences.jpg" alt="competences">
+                <h2 class="py-3 d-block d-md-none h2 competences">Compétences</h2>
+                <div class="col-md-6 image">
+                    <img class="pb-3 img-fluid competences" src="assets\img\Compétences.jpg" alt="competences">
                 </div>
-                <div id="progressbar" class="col-6">
-                    <h2 class="h2 competences">Compétences</h2>
+                <div id="progressbar" class="col-md-6">
+                    <h2 class="d-none d-md-block h2 competences">Compétences</h2>
                     <h4 class="text-custom">Pack office</h4>
                     <section id="third">
                         <div class="progress progress-striped active">
@@ -282,8 +338,8 @@
                         <div class="progress progress-striped active">
                             <div class="progress-bar progress-bar-success quart" style="width:0%"></div>
                         </div>
-                        <div class="langues">
-                            <h2 class="h2 competences">Langues</h2>
+                        <div class="pb-3 langues">
+                            <h2 class="pb-2 h2 competences">Langues</h2>
                             <h4 class="text-custom">Francais</h4>
                             <div class="progress progress-striped active">
                                 <div class="progress-bar progress-bar-success plein" style="width:0%"></div>
@@ -303,62 +359,95 @@
         </div>
     </div>
     <!-- Loisirs -->
+    <!-- --------------------------Loisir Desktop----------------------- -->
     <div class="parallax-effect loisirs">
-        <div id="loisirs" class="text-light container-fluid bg-gradiant loisirs">
-            <div class="row">
-                <div class="col-6 pe-0 pt-0">
-                    <div class="container loisir">
-                        <h2 class="h2 loisirs">Loisirs</h2>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="rectangle jeu">Jeux-vidéos
+        <div id="loisirs">
+            <div class="d-none d-md-block text-light container-fluid bg-gradiant loisirs">
+                <div class="row">
+                    <div class="col-md-6 pe-md-0 pt-md-0">
+                        <div class="container loisir">
+                            <h2 class="h2 loisirs">Loisirs</h2>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <div class="rectangle jeu">Jeux-vidéos
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="rectangle equi">Equitation
+                                    </div>
+                                </div>
+                                <div class="row loisir">
+                                    <div class="col-12">
+                                        <div class="rectangle airsoft">Airsoft
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="rectangle equi">Equitation
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 image">
+                        <img class="img-fluid loisirs" src="assets\img\Loisirs.jpg" alt="loisirs">
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------Loisir portable------------------- -->
+            <div class="d-block d-md-none text-light container-fluid bg-gradiant loisirs">
+                <div class="row">
+                    <div class="col-md-6 pe-md-0 pt-md-0">
+                        <div class="container loisir">
+                            <h2 class="h2 loisirs">Loisirs</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6 image ps-md-0">
+                                    <img class="img-fluid loisirs" src="assets\img\Loisirs.jpg" alt="loisirs">
                                 </div>
-                            </div>
-                            <div class="row loisir">
-                                <div class="col">
-                                    <div class="rectangle airsoft">Airsoft
+                                <div class="col-6 col-md-6">
+                                    <div class="rectangle jeu">Jeux-vidéos
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="rectangle equi">Equitation
+                                    </div>
+                                </div>
+                                <div class="row loisir">
+                                    <div class="col-12">
+                                        <div class="rectangle airsoft">Airsoft
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 image ps-0">
-                    <img class="img-fluid loisirs" src="assets\img\Loisirs.jpg" alt="loisirs">
-                </div>
             </div>
         </div>
+
     </div>
     <!-- Footer -->
     <div class="parallax-effect footer">
         <footer id="parallax-effect footer" class="container-fluid bg-custom text-light">
-            <a class="row contact text-decoration-none" ><button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
-                data-bs-target="#contactmodal" target="_blank">Contactez-moi !</button></a>
+            <a class="row contact text-decoration-none" href="mailto:alexandrelvqq@gmail.com"><button type="button"
+                    class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactmodal"
+                    target="_blank">Contactez-moi !</button></a>
             <div class="row reseaux">
                 <ul class="reseaux">
-                    <li class="col-2 offset-5 list-inline-item">
+                    <li class="col-md-2 offset-md-5 list-inline-item">
                         <a href="https://www.linkedin.com/in/alexandre-leveque-3a1ba710b/" target="_blank"
                             class="text-light text-decoration-none">Linkedin <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/AlexLvq" target="_blank" class="text-light text-decoration-none">
                             GitHub<i class="fab fa-github"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    <!-- -------------------Script--------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="assets\js\javascript.js"></script>
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>

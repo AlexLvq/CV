@@ -222,6 +222,8 @@ h2.formations:after {
     border-radius: 20%;
     width: 350px;
     height: 350px;
+    margin-top: 130px;
+    margin-left: 40px;
 }
 .col-6{
     padding: 5%;
@@ -322,6 +324,12 @@ h2.loisirs:after {
     color: #ffe8ce;
     border-radius: 10px;
 }
+.col-12.col-md-6.image{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .container.loisir{
     padding-left: 100px;
     padding-top: 35px;
@@ -373,4 +381,133 @@ h2.loisirs:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+
+@media screen and (max-width: 750px){
+    /* --------------Compétences-------------- */
+    .img-fluid.competences{
+        border-radius: 20%;
+        width: 350px;
+        height: 350px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    /* -----------------Loisir------------------------- */
+    .rectangle.jeu{
+        height: 100px;
+        width: 150px;
+        background-image: url(../img/Jeuxvideos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffe8ce;
+        border-radius: 10px;
+    }
+    .rectangle.equi{
+        height: 100px;
+        width: 150px;
+        background-image: url(../img/equitation.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 10px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffe8ce;
+        border-radius: 10px;
+    }
+    .rectangle.airsoft{
+        height: 100px;
+        width: 150px;
+        margin-bottom: 10px;
+        background-image: url(../img/airsoft.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffe8ce;
+        border-radius: 10px;
+    }
+    .container.loisir{
+        padding: 0;
+    }
+    .row.loisir{
+        padding-left: 120px;
+    }
+    .h2.loisirs{
+        padding-top: 20px;
+    }
+    .img-fluid.loisirs{
+        padding-bottom: 20px;
+    }
+    /* -------------------Footer--------------------- */
+    .list-inline-item{
+        display: flex;
+        justify-content: center;
+    }
+    .fab.fa-linkedin{
+        padding-right: 20px;
+    }
+    /* --------------------NavBar JS-------------------- */
+    .text-white.accueil{
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .nav-link.active{
+        color: white;
+        text-decoration: none;
+    }
+    #socialink a {
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 50%;
+        background: #1C1C1C;
+        height: 43px;
+        width: 45px;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .container.accueil{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 500px;
+    }
+    span{
+        font-weight: bold;
+        color: #ffe8ce;
+    }
+    .d-inline-block{
+        padding-top: 7px;
+    }
+    .fab.fa-linkedin{
+        padding-left: 14px;
+    }
+    /* Navbar */
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: start;
+    }
 }
