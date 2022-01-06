@@ -1,5 +1,73 @@
+/* --------------NavBar JS-------------- */
+.text-white.accueil{
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link.active{
+    color: white;
+    text-decoration: none;
+}
+#socialink a {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #1C1C1C;
+    height: 43px;
+    width: 45px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.container.accueil{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-right: 200px;
+    padding-bottom: 500px;
+}
+span{
+    font-weight: bold;
+    color: #ffe8ce;
+}
 /* --------------NavBar-------------- */
-
+/* experience */
+#experience:focus{
+    color: #474747 !important;
+}
+#experience:hover{
+    color: #474747 !important;
+}
+/* formation */
+#formation:focus{
+    color: #8f6757 !important;
+}
+#formation:hover{
+    color: #8f6757 !important;
+}
+/* competence */
+#competence:focus{
+    color: #edae19 !important;
+}
+#competence:hover{
+    color: #edae19 !important;
+}
+/* loisir */
+#loisir:focus{
+    color: #0d5b6b !important;
+}
+#loisir:hover{
+    color: #0d5b6b !important;
+}
+/* contact */
+#contact:focus{
+    color: #1C1C1C !important;
+}
+#contact:hover{
+    color: #1C1C1C !important;
+}
 /* --------------Body-------------- */
 .bg-custom{
     background-color: #1C1C1C;
@@ -87,7 +155,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 300px;
+    padding-top: 600px;
 }
 h2.experiences:after {
     content: "";
@@ -97,6 +165,22 @@ h2.experiences:after {
     background: #474747;
     margin-bottom: 4px;
     margin-left: 10px;
+}
+h3.fs-5{
+    color: #ffe8ce;
+    font-weight: bold;
+}
+.col-3.expe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.col-3.pe-0.pb-4{
+    padding-left: 50px;
+}
+#expe{
+    padding-left: 50px;
 }
 /* --------------Formations-------------- */
 .img-fluid.formations{
@@ -114,7 +198,7 @@ h2.experiences:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 300px;
+    padding-top: 600px;
 }
 h2.formations:after {
     content: "";
@@ -124,6 +208,13 @@ h2.formations:after {
     background: #8f6757;
     margin-bottom: 4px;
     margin-left: 10px;
+}
+.col-3.forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding-bottom: 70px;
 }
 /* --------------Compétences-------------- */
 .img-fluid.competences{
@@ -141,7 +232,7 @@ h2.formations:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 300px;
+    padding-top: 600px;
 }
 h2.competences:after {
     content: "";
@@ -155,6 +246,9 @@ h2.competences:after {
 /* Barre */
 .progress-bar.progress-bar-success{
     background-color: #edae19;
+}
+.langues{
+    padding-top: 40px;
 }
 /* --------------Loisirs-------------- */
 .img-fluid.loisirs{
@@ -172,7 +266,7 @@ h2.competences:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 300px;
+    padding-top: 600px;
 }
 h2.loisirs:after {
     content: "";
@@ -182,6 +276,58 @@ h2.loisirs:after {
     background: #0d5b6b;
     margin-bottom: 4px;
     margin-left: 10px;
+}
+.rectangle.jeu{
+    height: 100px;
+    width: 250px;
+    background-image: url(../img/Jeuxvideos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffe8ce;
+    border-radius: 10px;
+}
+.rectangle.equi{
+    height: 100px;
+    width: 250px;
+    background-image: url(../img/equitation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffe8ce;
+    border-radius: 10px;
+}
+.rectangle.airsoft{
+    height: 100px;
+    width: 250px;
+    background-image: url(../img/airsoft.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffe8ce;
+    border-radius: 10px;
+}
+.container.loisir{
+    padding-left: 100px;
+    padding-top: 35px;
+}
+.row.loisir{
+    padding-left: 155px;
+    padding-top: 20px;
 }
 /* --------------Footer-------------- */
 .parallax-effect.footer{
@@ -213,6 +359,10 @@ h2.loisirs:after {
 }
 .reseaux{
     margin: 0;
+}
+.list-inline-item{
+    display: flex;
+    justify-content: space-between;
 }
 /* ---------Modal---------- */
 .modal-body.background{

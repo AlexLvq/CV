@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets\css\styles.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets\img\Moi (3).jpg">
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>CV Numérique, Alexandre Leveque</title>
 </head>
 
@@ -58,34 +56,83 @@
         </div>
     </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-custom">
+    <nav id="nav1" class="navbar navbar-expand-lg navbar-dark fixed-top bg-custom">
         <div class="container-fluid">
             <h4 class="text-light">Alexandre LEVEQUE</h4>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <a class="navbar-brand" href="#profil">CV</a>
+            <div class="collapse navbar-collapse justify-content-end profil" id="navbarNavAltMarkup">
+                <a class="navbar-brand" href="#profil">Profil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#profil">Profil</a>
-                    <a class="nav-link" href="#experiences">Expériences</a>
-                    <a class="nav-link" href="#formations">Formations</a>
-                    <a class="nav-link" href="#competences">Compétences</a>
-                    <a class="nav-link" href="#loisirs">Loisirs</a>
-                    <a class="nav-link" href="#parallax-effect footer">Contact</a>
+                    <a class="nav-link experience" id="experience" href="#experiences">Expériences</a>
+                    <a class="nav-link" id="formation" href="#formations">Formations</a>
+                    <a class="nav-link" id="competence" href="#competences">Compétences</a>
+                    <a class="nav-link" id="loisir" href="#loisirs">Loisirs</a>
+                    <a class="nav-link" id="contact" href="#parallax-effect footer">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Profil -->
-    <div class="parallax-effect profil">
-        <div id="profil" class="container-fluid text-light">
+    <!------------------------ Navbar Page d'accueil ------------------------->
+    <div id="profil" class="parallax-effect profil">
+        <header id="navaccueil">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 p-0">
+                        <div class="container accueil">
+                            <!-- titre -->
+                            <h1>
+                                <a class="text-white accueil fs-1" href="#index.html">Alexandre LEVEQUE</a>
+                            </h1>
+                            <h2 class="fs-3">En formation <span>CDUI</span> à la Manu</h2>
+                            <!-- Menu de nav -->
+                            <nav class="">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#profil">Profil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="experience" class="nav-link active" href="#experiences">Expériences</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="formation" class="nav-link active" href="#formations">Formations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="competence" class="nav-link active" href="#competences">Compétences</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="loisir" class="nav-link active" href="#loisirs">Loisirs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="contact" class="nav-link active" href="#contacts">Contatcs</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- Reseaux sociaux -->
+                            <div id="socialink" class="">
+                                <a href="https://www.linkedin.com/in/alexandre-leveque-3a1ba710b/" target="_blank"
+                                    class="py-2 m-1 d-inline-block">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/AlexLvq" target="_blank" class="py-2 m-1 d-inline-block">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+        </header>
+        <!-- Profil -->
+        <div class="container-fluid text-light">
             <div class="row profil">
                 <div class="col-4 nom">
-                    <h1>Leveque <br>
-                        LEVEQUE</h1>
+                    <!-- <h1>Leveque <br>
+                        LEVEQUE</h1> -->
                 </div>
                 <div class="col-4">
                     <img class="img-fluid alexandrelvq" src="assets\img\Moi (3).jpg" alt="PhotoAlexandreLeveque">
@@ -111,14 +158,49 @@
     <div class="parallax-effect experiences">
         <div id="experiences" class="text-light container-fluid bg-gradiant experiences">
             <div class="row">
-                <div class="col-6 image">
+                <div class="col-6 image pe-0 ps-0">
                     <img class="img-fluid experiences" src="assets\img\Experiences.jpg" alt="experiences">
                 </div>
-                <div class="col-6">
+                <div class="col-3 ps-0 pe-0 pt-4 pb-4">
                     <h2 class="h2 experiences">Expériences</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti commodi voluptates nesciunt.
-                        Voluptatem modi nostrum saepe hic et excepturi dolore officia vel necessitatibus similique.
-                        Voluptas asperiores nihil placeat commodi quos.</p>
+                    <div class="">
+                        <h3 class="fs-5">Développement Touristique et Commercial</h3>
+                        <p>Mars 2020 - Avril 2020</p>
+                        <div>
+                            <h4 class="text-secondary fs-5">Distillerie Guillon</h4>
+                        </div>
+                        <ul>
+                            <li>Stratégie de communication,</li>
+                            <li>Prospection,</li>
+                            <li>Accueil touristique.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-3">
+                        <h3 class="fs-5">Responsable Commercial / Marketing</h3>
+                        <p>Janvier 2018 - Juillet 2018</p>
+                        <div>
+                            <h4 class="text-secondary fs-5">Vendôme Reception</h4>
+                        </div>
+                        <ul>
+                            <li>Développement du portefeuille client,</li>
+                            <li>Veille concurrentielle,</li>
+                            <li>Gestion, maitrise du logiciel.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 expe">
+                    <div class="">
+                        <h3 class="fs-5">Assitant Manager</h3>
+                        <p>Juin 2017 - Aout 2017</p>
+                        <div>
+                            <h4 class="text-secondary fs-5">Carrefour</h4>
+                        </div>
+                        <ul>
+                            <li>Suivi des gestions des stocks,</li>
+                            <li>Planification des plannings,</li>
+                            <li>Gestion et mise en rayon.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,13 +209,44 @@
     <div class="parallax-effect formations">
         <div id="formations" class="text-light container-fluid bg-gradiant formations">
             <div class="row">
-                <div class="col-6">
-                    <h2 class="h2 formations">Formations</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti commodi voluptates nesciunt.
-                        Voluptatem modi nostrum saepe hic et excepturi dolore officia vel necessitatibus similique.
-                        Voluptas asperiores nihil placeat commodi quos.</p>
+                <h2 class="h2 formations pt-5 ps-5">Formations</h2>
+                <div class="col-3 pe-0 pb-4">
+                    <div class="pt-4">
+                        <h3 class="fs-5">Concepteur Designer UI</h3>
+                        <p>Novembre 2021 - Aout 2022</p>
+                        <div>
+                            <h4 class="text-secondary fs-5">La Manu</h4>
+                        </div>
+                        <ul>
+                            <li>Concepteur Designer UI (CDUI)</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4">
+                        <h3 class="fs-5">Bachelor Marketing Communication</h3>
+                        <p>Octobre 2019 - Septembre 2020</p>
+                        <div>
+                            <h4 class="text-secondary fs-5">Esupcom</h4>
+                        </div>
+                        <ul>
+                            <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de validation)
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 image">
+                <div id="expe" class="col-3 forma">
+                    <div>
+                        <h3 class="fs-5">Bachelor Marketing Communication</h3>
+                        <p>Octobre 2019 - Septembre 2020</p>
+                        <div>
+                            <h4 class="text-secondary fs-5">Esupcom</h4>
+                        </div>
+                        <ul>
+                            <li>Bachelor Reponsable Projet Marketing et Communication (RPMC) (en attente de validation)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 image pe-0 ps-0">
                     <img class="img-fluid formations" src="assets\img\Formations.jpg" alt="formations">
                 </div>
             </div>
@@ -146,20 +259,45 @@
                 <div class="col-6 image">
                     <img class="img-fluid competences" src="assets\img\Compétences.jpg" alt="competences">
                 </div>
-                <div class="col-6">
+                <div id="progressbar" class="col-6">
                     <h2 class="h2 competences">Compétences</h2>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-success" style="width:0%"></div>
-                    </div>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-success" style="width:0%"></div>
-                    </div>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-success" style="width:0%"></div>
-                    </div>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-success" style="width:0%"></div>
-                    </div>
+                    <h4 class="text-custom">Pack office</h4>
+                    <section id="third">
+                        <div class="progress progress-striped active">
+                            <span class="progress-bar progress-bar-success plein" style="width:0%"></span>
+                        </div>
+                        <h4 class="text-custom">Photoshop</h4>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success trois" style="width:0%"></div>
+                        </div>
+                        <h4 class="text-custom">Réseaux sociaux</h4>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success plein" style="width:0%"></div>
+                        </div>
+                        <h4 class="text-custom">Html</h4>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success quart" style="width:0%"></div>
+                        </div>
+                        <h4 class="text-custom">CSS</h4>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success quart" style="width:0%"></div>
+                        </div>
+                        <div class="langues">
+                            <h2 class="h2 competences">Langues</h2>
+                            <h4 class="text-custom">Francais</h4>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-success plein" style="width:0%"></div>
+                            </div>
+                            <h4 class="text-custom">Anglais</h4>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-success moitie" style="width:0%"></div>
+                            </div>
+                            <h4 class="text-custom">Espagnol</h4>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-success moitie" style="width:0%"></div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -168,13 +306,28 @@
     <div class="parallax-effect loisirs">
         <div id="loisirs" class="text-light container-fluid bg-gradiant loisirs">
             <div class="row">
-                <div class="col-6">
-                    <h2 class="h2 loisirs">Loisirs</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti commodi voluptates nesciunt.
-                        Voluptatem modi nostrum saepe hic et excepturi dolore officia vel necessitatibus similique.
-                        Voluptas asperiores nihil placeat commodi quos.</p>
+                <div class="col-6 pe-0 pt-0">
+                    <div class="container loisir">
+                        <h2 class="h2 loisirs">Loisirs</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="rectangle jeu">Jeux-vidéos
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="rectangle equi">Equitation
+                                </div>
+                            </div>
+                            <div class="row loisir">
+                                <div class="col">
+                                    <div class="rectangle airsoft">Airsoft
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 image">
+                <div class="col-6 image ps-0">
                     <img class="img-fluid loisirs" src="assets\img\Loisirs.jpg" alt="loisirs">
                 </div>
             </div>
@@ -183,15 +336,16 @@
     <!-- Footer -->
     <div class="parallax-effect footer">
         <footer id="parallax-effect footer" class="container-fluid bg-custom text-light">
-            <a href="#" class="row contact text-decoration-none" data-bs-toggle="modal" data-bs-target="#contactmodal"
-                target="_blank"><button type="button" href="#contactmodal" class="btn btn-outline-light">Contactez-moi
-                    !</button></a>
+            <a class="row contact text-decoration-none" ><button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                data-bs-target="#contactmodal" target="_blank">Contactez-moi !</button></a>
             <div class="row reseaux">
                 <ul class="reseaux">
-                    <li class="list-inline-item">
+                    <li class="col-2 offset-5 list-inline-item">
                         <a href="https://www.linkedin.com/in/alexandre-leveque-3a1ba710b/" target="_blank"
                             class="text-light text-decoration-none">Linkedin <i class="fab fa-linkedin"></i>
                         </a>
+                        <a href="https://github.com/AlexLvq" target="_blank" class="text-light text-decoration-none">
+                            GitHub<i class="fab fa-github"></i>
                     </li>
                 </ul>
             </div>
@@ -200,7 +354,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="assets\js\javascript.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
