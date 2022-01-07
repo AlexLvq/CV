@@ -145,7 +145,14 @@ h1{
     border-radius: 20%;
     width: 350px;
     height: 350px;
-    margin-top: 100px;
+}
+.col-12.col-md-3{
+    padding: 40px 20px;
+}
+.col-12.py-4.col-md-6.image{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 .col-6{
     padding: 5%;
@@ -190,6 +197,14 @@ h3.fs-5{
     width: 350px;
     height: 350px;
 }
+.col-md-6.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-md-3{
+    padding: 40px 30px;
+}
 .col-6{
     padding: 5%;
 }
@@ -223,11 +238,12 @@ h2.formations:after {
     border-radius: 20%;
     width: 350px;
     height: 350px;
-    margin-top: 130px;
-    margin-left: 40px;
 }
 .col-6{
     padding: 5%;
+}
+#progressbar{
+    padding: 30px 30px;
 }
 .parallax-effect.competences{
     background-image: url(../img/pierre.jpg);
@@ -332,8 +348,10 @@ h2.loisirs:after {
     padding-bottom: 20px;
 }
 .container.loisir{
-    padding-left: 100px;
-    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
 }
 .row.loisir{
     padding-left: 155px;
@@ -374,15 +392,17 @@ h2.loisirs:after {
     display: flex;
     justify-content: space-between;
 }
+
+
 /* ---------Modal---------- */
-.modal-body.background{
+/* .modal-body.background{
     background-image: url(../img/BG.jpg);
     min-height: 300px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 
