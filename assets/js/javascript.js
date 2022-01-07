@@ -21,8 +21,6 @@ $(window).scroll(function () {
         $('#navaccueil').slideUp(450);
 });
 
-// hover + active sur les mots de la NavBar --------------------------------------------------
-
 
 // Barre annimée --------------------------------------------------
 $(".plein").animate({
@@ -37,3 +35,22 @@ $(".trois").animate({
 $(".moitie").animate({
     width: "50%"
 }, 2500);
+
+
+
+
+// hover + active sur les mots de la NavBar --------------------------------------------------
+window.addEventListener('scroll', function () {
+    section.forEach(item => {
+        if (scrollY > (item.offsetTop + (window.innerHeight / 3)) && scrollY <= (item.offsetTop + item.clientHeight + (window.innerHeight / 3))) {
+
+            //d'abord on supprime la classe active sur tous
+            navbar_a.forEach(anchor => {
+                anchor.classList.remove('active');
+            })
+
+            // on met ensuite la classe active sur le lien qui a l'id = link-(id de l'item selectionné)
+            document.querySelector('#experience' + item.getAttribute('id')).classList.add('active');
+        }
+    });
+});
