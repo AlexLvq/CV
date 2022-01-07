@@ -32,6 +32,91 @@ span{
     font-weight: bold;
     color: #ffe8ce;
 }
+/* experience */
+nav ul #experience::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #474747;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav ul #experience:hover:after{
+    visibility: visible;
+    width:30px;
+}
+/* formation */
+nav ul #formation::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #8f6757;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav ul #formation:hover:after{
+    visibility: visible;
+    width:30px;
+}
+/* competence */
+nav ul #competence::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #edae19;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav ul #competence:hover:after{
+    visibility: visible;
+    width:30px;
+}
+/* loisir */
+nav ul #loisir::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #0d5b6b;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav ul #loisir:hover:after{
+    visibility: visible;
+    width:30px;
+}
+/* contact */
+nav ul #contact::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #474747;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav ul #contact:hover:after{
+    visibility: visible;
+    width:30px;
+}
 /* --------------NavBar-------------- */
 
 /* experience */
@@ -41,12 +126,44 @@ span{
 #experience:hover{
     color: #474747 !important;
 }
+nav div #experience::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #474747;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav div #experience:hover:after{
+    visibility: visible;
+    width:30px;
+}
 /* formation */
 #formation:focus{
     color: #8f6757 !important;
 }
 #formation:hover{
     color: #8f6757 !important;
+}
+nav div #formation::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #8f6757;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav div #formation:hover:after{
+    visibility: visible;
+    width:30px;
 }
 /* competence */
 #competence:focus{
@@ -55,6 +172,22 @@ span{
 #competence:hover{
     color: #edae19 !important;
 }
+nav div #competence::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #edae19;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav div #competence:hover:after{
+    visibility: visible;
+    width:30px;
+}
 /* loisir */
 #loisir:focus{
     color: #0d5b6b !important;
@@ -62,12 +195,44 @@ span{
 #loisir:hover{
     color: #0d5b6b !important;
 }
+nav div #loisir::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #0d5b6b;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav div #loisir:hover:after{
+    visibility: visible;
+    width:30px;
+}
 /* contact */
 #contact:focus{
     color: #474747 !important;
 }
 #contact:hover{
     color: #474747 !important;
+}
+nav div #contact::after{
+    display:block;
+    content: "";
+    position: relative;
+    height: 2px;
+    /* bottom: -4px; */
+    /* left: 0; */
+    background-color: #474747;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav div #contact:hover:after{
+    visibility: visible;
+    width:30px;
 }
 /* --------------Body-------------- */
 .bg-custom{
